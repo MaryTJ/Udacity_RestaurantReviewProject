@@ -50,6 +50,8 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+  
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -290,7 +292,9 @@ nav h1 a {
   color: #666;
 }
 
+
 @media only screen and (max-width: 386px) {
+  
   #restaurants-list .restaurant-img { 
     width: 10%;
     height: 10%;
@@ -305,8 +309,20 @@ nav h1 a {
     width: 40%;
     font-size: 65%;
   }
-
   
+/*
+  #restaurants-list li {
+    padding: 0 10px 10px;    
+    margin: 5px;
+  }
+  
+   .container {
+    margin: 30px 5px 0;
+  }
+  #restaurants-list li {
+    width: calc(100% - 30px);
+  }
+ */
 }
 
 @media only screen and (min-width: 387px) and (max-width: 699px) { /*media queries for devices less than 699 (ipad)*/
