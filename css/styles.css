@@ -76,8 +76,8 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: 100%;/*calc(50% - 80px);*/
-    order: 1;
+    width: 88%;
+    /*width: calc(50% - 80px);*/
 }
 
 /* Display list items side by side */
@@ -206,18 +206,24 @@ nav h1 a {
 }
 
 .inside header {
-  position: fixed;
-  top: 0;
+  /*position: fixed;
+  top: 0;*/
   width: 100%;
   z-index: 1000;
 }
-
 .inside #map-container {
+  /*background: blue none repeat scroll 0 0;
+  height: 87%;
+  position: fixed;
+  right: 0;
+  top: 80px;
+  width: 50%;*/
   background: blue none repeat scroll 0 0;
-  height: 25%;
+  height: 5%;
   position: absolute;
-  width:100%;
-   
+  /*top: 80px;*/
+  width: 100%;
+  margin: auto;
 }
 .inside #map {
   background-color: #ccc;
@@ -226,8 +232,8 @@ nav h1 a {
 }
 .inside #footer {
   bottom: 0;
-  position: absolute;
-
+  position: relative;
+  
 }
 #restaurant-name {
   color: #f18200;
@@ -238,18 +244,14 @@ nav h1 a {
   margin: 15px 0 30px;
   text-transform: uppercase;
   line-height: 1.1;
-  
 }
 #restaurant-img {
 	width: 50%;
-  height: 30%;
-  margin: auto;
-
+  height: 50%;
 }
 #restaurant-address {
   font-size: 12pt;
   margin: 10px 0px;
-  
 }
 #restaurant-cuisine {
   background-color: #333;
@@ -257,27 +259,21 @@ nav h1 a {
   font-size: 12pt;
   font-weight: 300;
   letter-spacing: 10px;
-  margin: auto;/*0 0 20px;*/
+  margin: 0 0 20px;
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
 	width: 50%;
-  
 }
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
-  width: 80%;
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
- }
-
-#restaurant-container{
-
 }
-
 #reviews-container {
   padding: 30px 40px 80px;
   
@@ -292,7 +288,6 @@ nav h1 a {
 #reviews-list {
   margin: 0;
   padding: 0;
-
 }
 #reviews-list li {
   background-color: #fff;
@@ -368,25 +363,25 @@ nav h1 a {
   }
 
 /* Restaurant info page */
-
   #breadcrumb {
     font-size: 4pt;
-/*    padding: 0px 30px 0 0;
-    width: calc(50% - 5px);*/
+    padding: 0px 30px 0 0;
+    width: 88%;/*calc(50% - 1px);*/
   }
 
   .inside #map-container {
-    height: 10%;
+    width: 90%;
+    height: 8%;
   }
 
   #restaurant-container, #reviews-container {
-    /*width: 70%;
-    padding: 1px 1px 1px;*/
+    width: 70%;
+    padding: 1px 1px 1px;
   }
 
   #restaurant-name {
-    font-size: 12pt;
-    /*margin: 100px 0 10px;*/
+    font-size: 10pt;
+    margin: 110px 0 10px;
   }
 
   #restaurant-address {
@@ -400,31 +395,31 @@ nav h1 a {
 
   #restaurant-hours td {
     font-size: 6pt;
-    /*padding: 0px 0px 0px 0px;
-    margin : 0px 0px 0px 0px;*/
+    padding: 0px 0px 0px 0px;
+    margin : 0px 0px 0px 0px;
   }  
 
   #reviews-list li {
     width: 70%;
-    /*margin: 0 0 0 0;
-    padding: 0 20px 5px;*/
+    margin: 0 0 0 0;
+    padding: 0 20px 5px;
 
   }
 
   #reviews-list li p {
-    font-size: 8pt;
-    /*margin: 0 0 0;*/
+    font-size: 6pt;
+    margin: 0 0 0;
     
   }
 
 
   #reviews-container h2{
     font-size: 18pt;
-    /*margin-bottom: 1px;*/
+    margin-bottom: 1px;
   }
 
   #reviews-container {
-    /*padding: 0px 0px 0px 0px;*/
+    padding: 0px 0px 0px 0px;
   }
 
 #footer .inside{
@@ -450,6 +445,65 @@ nav h1 a {
     width: 40%; 
   }
 /* Restaurant info page */
+  #breadcrumb {
+    font-size: 4pt;
+    padding: 0px 30px 0 0;
+    width: 88%;/*calc(50% - 1px);*/
+  }
+
+  .inside #map-container {
+    width: 90%;
+    height: 8%;
+  }
+
+  #restaurant-container, #reviews-container {
+    width: 70%;
+    padding: 1px 1px 1px;
+  }
+
+  #restaurant-name {
+    font-size: 10pt;
+    margin: 110px 0 10px;
+  }
+
+  #restaurant-address {
+    font-size: 6pt;
+  }
+
+  #restaurant-cuisine {
+    font-size: 6pt;
+  }
+
+
+  #restaurant-hours td {
+    font-size: 6pt;
+    padding: 0px 0px 0px 0px;
+    margin : 0px 0px 0px 0px;
+  }  
+
+  #reviews-list li {
+    width: 70%;
+    margin: 0 0 0 0;
+    padding: 0 20px 5px;
+
+  }
+
+  #reviews-list li p {
+    font-size: 8pt;
+    margin: 0 0 0;
+    
+  }
+
+
+  #reviews-container h2{
+    font-size: 18pt;
+    margin-bottom: 1px;
+  }
+
+  #reviews-container {
+    padding: 0px 0px 0px 0px;
+  }
+
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1000px) { /*breakpoints for devices less than 360*/
