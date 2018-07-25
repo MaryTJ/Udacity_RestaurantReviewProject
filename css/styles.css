@@ -244,13 +244,14 @@ nav h1 a {
   order: 3;
 }
 #restaurant-img {
-	width: 50%;
-  height: 50%;
-  order: 3;
+	width: 40%;
+  height: 20%;
+
 }
 #restaurant-address {
   font-size: 12pt;
   margin: 10px 0px;
+  order:4;
 }
 #restaurant-cuisine {
   background-color: #333;
@@ -263,6 +264,7 @@ nav h1 a {
   text-align: center;
   text-transform: uppercase;
 	width: 90%;
+  order:5;
 }
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
@@ -272,16 +274,14 @@ nav h1 a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
- 
-}
+ }
 
 #restaurant-container{
-  order: 3;
-  
+
 }
+
 #reviews-container {
   padding: 30px 40px 80px;
-  order: 4;  
   
 }
 #reviews-container h2 {
@@ -294,6 +294,7 @@ nav h1 a {
 #reviews-list {
   margin: 0;
   padding: 0;
+
 }
 #reviews-list li {
   background-color: #fff;
