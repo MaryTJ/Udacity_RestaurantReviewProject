@@ -19,16 +19,16 @@
   </header>
 
   <main id="maincontent">
-    <section id="map-container" tabindex="-1">
-      <div id="map" role ='application'></div>
+    <section id="map-container" role="application" aria-label="Map with restaurants" tabindex="-1">
+      <div id="map"></div>
     </section>
     <section id="filter-nav" tabindex="-1">
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select id="neighborhoods-select" name="neighborhoods" aria-label= "Select neighborhood from list,showing all restaurants" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select id="cuisines-select" name="cuisines" "Select cuisine from list showing all cuisine" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>

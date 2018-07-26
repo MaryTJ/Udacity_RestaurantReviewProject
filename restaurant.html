@@ -20,7 +20,7 @@
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
+    <ul id="breadcrumb" role="navigation" aria-label="breadcrumb">
       <li><a href="/">Home</a></li>
     </ul>
     <a href="#restaurant-container" class="skip-link">Skip map</a> <!--Adding skip link to skip map-->
@@ -32,7 +32,8 @@
   <!-- Beginning main -->
   <main id="maincontent">
     <!-- Beginning map -->
-    <section id="map-container">
+    <section id="map-container" role="application" aria-label="Map with restaurants">
+      <!-- taken help from https://stackoverflow.com/questions/44712753/what-is-a-suitable-wai-aria-role-attribute-for-a-map-element -->
       <div id="map"></div>
     </section>
     <!-- End map -->
