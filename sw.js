@@ -1,5 +1,5 @@
 const staticCacheName = 'restaurant-static-v1';
-
+//adding pages,images etc to cache
 let urlsToCache = [	'/',
 	'js/main.js',
 	'js/restaurant_info.js',
@@ -18,8 +18,9 @@ let urlsToCache = [	'/',
 	'restaurant.html'
 	];
 
+//I have followed the lectures and extracted/modified code from it
+//open cache on install 
 self.addEventListener('install', function (event) {
-	
 	event.waitUntil(
 		//open a cache named restaurant-static-v1
 		caches.open(staticCacheName).then(function(cache){
@@ -28,6 +29,7 @@ self.addEventListener('install', function (event) {
 	);
 });
 
+//checking for change/update in code 
 self.addEventListener('activate', function (event) {
 	event.waitUntil(
 		caches.keys().then(function(cacheNames) {

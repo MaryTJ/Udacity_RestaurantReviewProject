@@ -1,32 +1,49 @@
-# Mobile Web Specialist Certification Course
+# Restaurant Application Review
 ---
-#### _Three Stage Course Material Project - Restaurant Reviews_
+## Table of Contents
 
-## Project Overview: Stage 1
+* [Overview](#overview)
+* [How to access webpage](#How to access webpage)
+* [Features](#features)
+* [Credits](#credits)
+* [Author](#author)
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+## Overview
 
-### Specification
+This is a webpage to find restaurants based on location and cuisine.
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
+## How to access webpage
 
-### What do I do from here?
+From inside the project directory, 
+1. Open main.js and restaurant_info.js, update your MapBoxAPI key in the field mapboxToken 
+2. launch a local client server using Python from your terminal: 
+	a. Check python version by typing python -v
+	b. Use the following commands based on Python version:
+		Python 2: python -m SimpleHTTPServer 8000 
+		Python 3: python3 -m http.server 8000
+3. Visit the site in your browser at http://localhost:8000
 
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
+## Features
 
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+The webpage provides users the option of selecting restaurants based on location and cuisine. The user can view detailed information about a restaurant as well. The webpage contains a responsive design and works on different viewports. The webpage also implements accessibility features for users. The webpage also implements ServiceWorkers so that the webpage can be cached and fetched by the users in offline mode.
 
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
+## Credits
 
-## Leaflet.js and Mapbox:
+Most of the code has been written using the Udacity lectures. Aria information was taken from
+1. https://www.w3.org/TR/wai-aria-practices-1.1/#link
+2. https://stackoverflow.com/questions/44712753/what-is-a-suitable-wai-aria-role-attribute-for-a-map-element
 
-This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information. 
+## Author
 
-### Note about ES6
+This project is developed by Marium Talha for the Udacity FrontEnd Web development Course using the starter code provided by Udacity.
 
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
+## Dependencies
+
+1. Leaflet.js
+2. Mapbox
+
+This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). The user needs to fill mapboxToken field in main.js and restaurant.js with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information. 
+
 
 
 

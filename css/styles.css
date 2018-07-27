@@ -71,37 +71,35 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 10px 40px 16px;
-    list-style: none;
-    background-color: #eee;
-    font-size: 17px;
-    margin: 0;
-    width: 88%;
-    /*width: calc(50% - 80px);*/
+  padding: 10px 40px 16px;
+  list-style: none;
+  background-color: #eee;
+  font-size: 17px;
+  margin: 0;
+  width: 88%; 
 }
-
 /* Display list items side by side */
 #breadcrumb li {
-    display: inline;
+  display: inline;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
 #breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
 }
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-    color: #0275d8;
-    text-decoration: none;
+  color: #0275d8;
+  text-decoration: none;
 }
 
 /* Add a color on mouse-over */
 #breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
+  color: #01447e;
+  text-decoration: underline;
 }
 /* ====================== Map ====================== */
 #map {
@@ -122,10 +120,7 @@ nav h1 a {
   font-weight: normal;
   line-height: 1;
   margin: 0 20px;
- /* display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;*/
-}
+ }
 .filter-options select {
   background-color: white;
   border: 1px solid #fff;
@@ -161,7 +156,6 @@ nav h1 a {
   }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
-  /*display: block;*/
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -169,7 +163,6 @@ nav h1 a {
   max-width: 100%;
   max-height: 248px;
   max-height: 100%;
-  /*min-width: 100%;*/
 }
 #restaurants-list li h1 {
   color: #f18200;
@@ -206,22 +199,13 @@ nav h1 a {
 }
 
 .inside header {
-  /*position: fixed;
-  top: 0;*/
   width: 100%;
   z-index: 1000;
 }
 .inside #map-container {
-  /*background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 50%;*/
   background: blue none repeat scroll 0 0;
   height: 5%;
   position: absolute;
-  /*top: 80px;*/
   width: 100%;
   margin: auto;
 }
@@ -233,7 +217,6 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: relative;
-  
 }
 #restaurant-name {
   color: #f18200;
@@ -320,9 +303,10 @@ nav h1 a {
 .skip-link:focus {
   top: 0;
 }
+
 /* Media Queries */
 @media only screen and (max-width: 386px) {
-  /* Main page */
+  /* Media queries for Main page */
   
   #restaurants-list {
     width: 80%;
@@ -375,11 +359,11 @@ nav h1 a {
     height: 150px;
   }
 
-/* Restaurant info page */
+/*Media queries for Restaurant info page */
   #breadcrumb {
     font-size: 4pt;
     padding: 0px 30px 0 0;
-    width: 88%;/*calc(50% - 1px);*/
+    width: 88%;
   }
 
   .inside #map-container {
@@ -405,7 +389,6 @@ nav h1 a {
     font-size: 6pt;
   }
 
-
   #restaurant-hours td {
     font-size: 6pt;
     padding: 0px 0px 0px 0px;
@@ -416,15 +399,12 @@ nav h1 a {
     width: 70%;
     margin: 0 0 0 0;
     padding: 0 20px 5px;
-
   }
 
   #reviews-list li p {
     font-size: 6pt;
-    margin: 0 0 0;
-    
+    margin: 0 0 0;   
   }
-
 
   #reviews-container h2{
     font-size: 18pt;
@@ -435,29 +415,27 @@ nav h1 a {
     padding: 0px 0px 0px 0px;
   }
 
-#footer .inside{
-
-  font-size: 2pt;
-  width: 70%;
-}
-
+  #footer .inside{
+    font-size: 2pt;
+    width: 70%;
+  }
 }
 
 @media only screen and (min-width: 387px) and (max-width: 699px) { /*media queries for devices less than 699 (ipad)*/
-  /* Main page */
+  /* media queries for Main page */
   .restaurant-img {
     width: 100%;
     height: 50%;
   }
   
-  #map{
+  #map {
     height: 200px;
   }
 
-  .filter-options select{
+  .filter-options select {
     width: 40%; 
   }
-/* Restaurant info page */
+/* media queries for Restaurant info page */
   #breadcrumb {
     font-size: 4pt;
     padding: 0px 30px 0 0;
@@ -487,7 +465,6 @@ nav h1 a {
     font-size: 6pt;
   }
 
-
   #restaurant-hours td {
     font-size: 6pt;
     padding: 0px 0px 0px 0px;
@@ -498,15 +475,12 @@ nav h1 a {
     width: 70%;
     margin: 0 0 0 0;
     padding: 0 20px 5px;
-
   }
 
   #reviews-list li p {
     font-size: 8pt;
     margin: 0 0 0;
-    
   }
-
 
   #reviews-container h2{
     font-size: 18pt;
@@ -516,8 +490,4 @@ nav h1 a {
   #reviews-container {
     padding: 0px 0px 0px 0px;
   }
-
-}
-
-@media only screen and (min-width: 700px) and (max-width: 1000px) { /*breakpoints for devices less than 360*/
 }
