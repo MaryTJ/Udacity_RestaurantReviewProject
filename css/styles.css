@@ -41,6 +41,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+ 
 }
 #footer {
   background-color: #444;
@@ -51,7 +52,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
   position: relative;
-
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -59,6 +59,8 @@ nav {
   height: 80px;
   background-color: #252831;
   text-align:center;
+  display: flex;
+  align-items: center;
 }
 nav h1 {
   margin: auto;
@@ -128,7 +130,7 @@ nav h1 a {
   font-size: 11pt;
   height: 35px;
   letter-spacing: 0;
-  margin: 10px;
+  margin: 0 0 10px 0;
   padding: 0 10px;
   width: 200px;
 }
@@ -138,11 +140,12 @@ nav h1 a {
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
-  padding: 30px 15px 60px;
+  /*padding: 30px 15px 60px;*/
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  align-items: center;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -153,6 +156,7 @@ nav h1 a {
   padding: 0 30px 25px;
   text-align: left;
   width: 270px;
+  align-content: center;
   }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -229,8 +233,8 @@ nav h1 a {
   line-height: 1.1;
 }
 #restaurant-img {
-	width: 50%;
-  height: 50%;
+	width: 90%;
+  height: 90%;
 }
 #restaurant-address {
   font-size: 12pt;
@@ -252,10 +256,12 @@ nav h1 a {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
-  width: 50%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 #reviews-container {
   padding: 30px 40px 80px;
@@ -271,6 +277,9 @@ nav h1 a {
 #reviews-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #reviews-list li {
   background-color: #fff;
@@ -372,8 +381,9 @@ nav h1 a {
   }
 
   #restaurant-container, #reviews-container {
-    width: 70%;
+    width: 90%;
     padding: 1px 1px 1px;
+    align-items: center;
   }
 
   #restaurant-name {
@@ -396,7 +406,7 @@ nav h1 a {
   }  
 
   #reviews-list li {
-    width: 70%;
+    width: 90%;
     margin: 0 0 0 0;
     padding: 0 20px 5px;
   }
@@ -446,10 +456,11 @@ nav h1 a {
     width: 90%;
     height: 8%;
   }
-
+/*
   #restaurant-container, #reviews-container {
-    width: 70%;
+    width: 90%;
     padding: 1px 1px 1px;
+    align-items: center;
   }
 
   #restaurant-name {
@@ -489,5 +500,5 @@ nav h1 a {
 
   #reviews-container {
     padding: 0px 0px 0px 0px;
-  }
+  }*/
 }
