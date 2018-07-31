@@ -78,7 +78,6 @@ nav h1 a {
   background-color: #eee;
   font-size: 17px;
   margin: 0;
-  /*width: 88%; */
 }
 /* Display list items side by side */
 #breadcrumb li {
@@ -140,7 +139,6 @@ nav h1 a {
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
-  /*padding: 30px 15px 60px;*/
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -230,7 +228,6 @@ nav h1 a {
 }
 #restaurant-img {
 	width: 80%;
-  /*height: 90%;*/
 }
 #restaurant-address {
   font-size: 12pt;
@@ -264,9 +261,7 @@ nav h1 a {
 #reviews-container {
   padding: 30px 40px 80px;
   border-radius: 25px;
-/*  border: 2px solid #000000;*/
 }
-
 #reviews-container h3 {
   color: #f58500;
   font-size: 24pt;
@@ -289,7 +284,6 @@ nav h1 a {
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  /*padding: 0 20px 20px;*/
   position: relative;
   width: 85%;
   border-radius: 25px;
@@ -297,22 +291,20 @@ nav h1 a {
 }
 #reviews-list li p {
   margin: 0 0 10px;
-  /*width: 50%;
-  display: inline-block;*/
 }
-/*https://stackoverflow.com/questions/2751127/how-to-select-the-first-second-or-third-element-with-a-given-class-name
+/* Used help from the following websites
+https://stackoverflow.com/questions/2751127/how-to-select-the-first-second-or-third-element-with-a-given-class-name
 https://css-tricks.com/the-difference-between-nth-child-and-nth-of-type/
 https://stackoverflow.com/questions/8059449/select-consecutive-groups-using-nth-child*/
+/*https://www.w3schools.com/css/css_inline-block.asp*/
 #reviews-list li p:nth-child(1), #reviews-list li p:nth-child(2){
   background-color: #A9A9A9;
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 20px;
   width: 50%;
-  /*https://www.w3schools.com/css/css_inline-block.asp*/
   display: inline-block; 
 }
-
 #reviews-list li p:nth-child(3) {
   background-color: #FF7F50;
   color: #FFFFFF;   
@@ -343,45 +335,36 @@ https://stackoverflow.com/questions/8059449/select-consecutive-groups-using-nth-
     width: 80%;
     height: 10%;
   }
-
   #restaurants-list li {
     padding-bottom: 0px;
     height: 10%;
   }
-
   .restaurant-img {
     width: 90%;
     height: 50%;
   }
-
   #restaurants-list li h3 {
     font-size: 10pt;
     margin: 5px 0 5px;
   }
-
   #restaurants-list li p {
     font-size: 8pt;
   }
-
   #restaurants-list li a {
     font-size: 8pt;
     margin: 10px 0 0;
     padding: 4px 10px 5px;
   }
-
   .filter-options select {
     width: 40%;
     font-size: 65%;
   }
-
   nav {
     height: 50%;
   }
-  
   nav h1 a{
     font-size: 12pt;
   }
-
   #restaurants-list li {
     padding: 0 5px 5px;
     margin: 2px;
@@ -392,81 +375,24 @@ https://stackoverflow.com/questions/8059449/select-consecutive-groups-using-nth-
 
 /*Media queries for Restaurant info page */
 
-#reviews-list li p:nth-child(1), #reviews-list li p:nth-child(2){
-  font-size: 8px;
-}
-#restaurant-name {
-  font-size: 18px;
-  margin: 50px 0 5px;
-}
-#restaurant-hours td {
+  #reviews-list li p:nth-child(1), #reviews-list li p:nth-child(2){
+    font-size: 7px;
+  }
+  #restaurant-name {
+    font-size: 18px;
+    margin-top: 50px;
+    margin: 80px 0 30px;
+  }
+  #restaurant-hours td {
     font-size: 8pt;
   }
-#reviews-container {
-  padding: 1px 1px 1px;
-}
-/*
-  #breadcrumb {
-    font-size: 4pt;
-    padding: 0px 30px 0 0;
-    width: 88%;
-  }
-
-  .inside #map-container {
-    width: 90%;
-    height: 8%;
-  }
-
-  #restaurant-container, #reviews-container {
-    width: 90%;
-    padding: 1px 1px 1px;
-    align-items: center;
-  }
-
-  #restaurant-name {
-    font-size: 10pt;
-    margin: 110px 0 10px;
-  }
-
-  #restaurant-address {
-    font-size: 6pt;
-  }
-
   #restaurant-cuisine {
-    font-size: 6pt;
+    font-size: 8px;
   }
-
-  #restaurant-hours td {
-    font-size: 6pt;
-    padding: 0px 0px 0px 0px;
-    margin : 0px 0px 0px 0px;
-  }  
-
-  #reviews-list li {
-    width: 90%;
-    margin: 0 0 0 0;
-    padding: 0 20px 5px;
+  #reviews-container, #restaurant-container{
+    width: 65%;
+   
   }
-
-  #reviews-list li p {
-    font-size: 6pt;
-    margin: 0 0 0;   
-  }
-
-  #reviews-container h3{
-    font-size: 18pt;
-    margin-bottom: 1px;
-  }
-
-  #reviews-container {
-    padding: 0px 0px 0px 0px;
-  }
-
-  #footer .inside{
-    font-size: 2pt;
-    width: 70%;
-  }
-  */
 }
 
 @media only screen and (min-width: 387px) and (max-width: 699px) { /*media queries for devices less than 699 (ipad)*/
@@ -475,76 +401,18 @@ https://stackoverflow.com/questions/8059449/select-consecutive-groups-using-nth-
     width: 100%;
     height: 50%;
   }
-  
   #map {
     height: 200px;
   }
-
   .filter-options select {
     width: 40%; 
   }
 /* media queries for Restaurant info page */
-/*  #breadcrumb {
-    font-size: 4pt;
-    padding: 0px 30px 0 0;
-    width: 88%;
+  #reviews-list li p:nth-child(1), #reviews-list li p:nth-child(2){
+    font-size: 11px;
   }
-
-  .inside #map-container {
-    width: 90%;
-    height: 8%;
-  }
-*/
-#reviews-list li p:nth-child(1), #reviews-list li p:nth-child(2){
-  font-size: 11px;
-}
-#restaurant-name {
-  font-size: 20px;
-  margin: 20px 0 30px;
-}
-/*
-  #restaurant-container, #reviews-container {
-    width: 90%;
-    padding: 1px 1px 1px;
-    align-items: center;
-  }
-
   #restaurant-name {
-    font-size: 10pt;
-    margin: 110px 0 10px;
+    font-size: 20px;
+    margin: 20px 0 30px;
   }
-
-  #restaurant-address {
-    font-size: 6pt;
-  }
-
-  #restaurant-cuisine {
-    font-size: 6pt;
-  }
-
-  #restaurant-hours td {
-    font-size: 6pt;
-    padding: 0px 0px 0px 0px;
-    margin : 0px 0px 0px 0px;
-  }  
-
-  #reviews-list li {
-    width: 70%;
-    margin: 0 0 0 0;
-    padding: 0 20px 5px;
-  }
-
-  #reviews-list li p {
-    font-size: 8pt;
-    margin: 0 0 0;
-  }
-
-  #reviews-container h3{
-    font-size: 18pt;
-    margin-bottom: 1px;
-  }
-
-  #reviews-container {
-    padding: 0px 0px 0px 0px;
-  }*/
 }
