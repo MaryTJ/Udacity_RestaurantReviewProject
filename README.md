@@ -3,7 +3,7 @@
 ## Table of Contents
 
 * [Overview](#overview)
-* [How to access webpage](#How to access webpage)
+* [How to access webpage](#HowToAccessWebpage)
 * [Features](#features)
 * [Credits](#credits)
 * [Author](#author)
