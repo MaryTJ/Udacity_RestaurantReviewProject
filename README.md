@@ -32,6 +32,10 @@ The webpage provides users the option of selecting restaurants based on location
 Most of the code has been written using the Udacity lectures. Aria information was taken from
 1. https://www.w3.org/TR/wai-aria-practices-1.1/#link
 2. https://stackoverflow.com/questions/44712753/what-is-a-suitable-wai-aria-role-attribute-for-a-map-element
+3. https://stackoverflow.com/questions/2751127/how-to-select-the-first-second-or-third-element-with-a-given-class-name
+4. https://css-tricks.com/the-difference-between-nth-child-and-nth-of-type/
+5. https://stackoverflow.com/questions/8059449/select-consecutive-groups-using-nth-child
+6. https://www.w3schools.com/css/css_inline-block.asp
 
 ## Author
 
