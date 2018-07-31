@@ -246,14 +246,15 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	width: 90%;
+	width: 70%;
 }
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
+  padding: 210px 40px 30px;
+  width: 70%;
   margin: auto;
+  text-align: center;
   /*display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -263,14 +264,16 @@ nav h1 a {
 #reviews-container {
   padding: 30px 40px 80px;
   border-radius: 25px;
-  border: 2px solid #000000;
+/*  border: 2px solid #000000;*/
 }
+
 #reviews-container h3 {
   color: #f58500;
   font-size: 24pt;
   font-weight: 300;
   letter-spacing: -1px;
   padding-bottom: 1pt;
+  text-align: center;
 }
 #reviews-list {
   margin: 0;
